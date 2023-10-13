@@ -30,7 +30,6 @@ class HttpStatusImageDownloaderTest {
 
     @Test
     public void testDownloadStatusImageFailure() {
-        // Перевірка невдачі завантаження картинки (наприклад, невірний код статусу)
         assertThrows(Exception.class, () -> downloader.downloadStatusImage(9999));
     }
 
